@@ -4,17 +4,33 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+/**Globales**/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+  /**Header y navegacion**/
 .nombre-sitio{
     
-    margin-top:100px;
-    margin-bottom: 100px;
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .nombre-sitio span{
     
     color: blue;
 }
-  
-.navegacion {
+.contenedor-navegacion{
+    border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px;
+}
+.nav_principal {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -36,9 +52,28 @@ html {
     box-sizing: border-box;
 }
 
-.sobre-empresa {
-    background-color: blue;
-    width: 500px;
-    padding: 100px;
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
+img{
+    max-width: 100px;
+}
+
+/*categorias*/
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+  
+
+}
+
