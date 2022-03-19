@@ -5,10 +5,27 @@ html {
     box-sizing: inherit;
   }
 /**Globales**/
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Playfair Display', serif
+}
+
+
 a{
     text-decoration: none;
     color: black;
 }
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
 
 
   /**Header y navegacion**/
@@ -27,11 +44,10 @@ a{
     border-top-style: solid;
     border-width: 1px;
 }
-.nav_principal {
-    padding: 20px 0px;
-    display: flex;
-    justify-content: space-between;
 
+img{
+    max-width: 100%;
+    display: block;
 }
 
 .enlace {
@@ -51,29 +67,45 @@ a{
     padding: 25px;
     box-sizing: border-box;
 }
+.nav_principal {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
 
+}
 .hero{
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
 }
-
-.contenedor{
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-img{
-    max-width: 100px;
-}
-
 /*categorias*/
 .listado-categorias{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:20px;
   
 
 }
+
+
+
+.categorias h2{
+text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color:#e1e1e1;
+    border-bottom-right-radius: 10px;
+}
+
+
 
